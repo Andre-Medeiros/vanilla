@@ -1,0 +1,40 @@
+.login-form{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "login-logo"
+    "login"
+    "button"
+    ;
+
+    
+    width: 100%;
+    max-width: 600px;
+    height: 370px;
+    padding: 10px 30px;
+    margin: auto ;
+    margin-top: 250px;
+
+    background-color: #FFE7FA;
+    border: solid 2px #e95ff5;
+    border-radius: 8px;
+}
+
+.login-logo {
+    grid-area: login-logo;
+    justify-self: center;
+}
+
+.login {
+    grid-area: login;
+    padding: 0;
+    margin: 0;
+    justify-items: center;
+}
+
+.button {
+    grid-area: button;
+    justify-self: center;
+    font-size: 24px;
+}

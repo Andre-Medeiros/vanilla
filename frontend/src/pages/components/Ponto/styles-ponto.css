@@ -1,0 +1,96 @@
+.ponto-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 160px;
+}
+
+
+.ponto-campo {
+    display: grid;
+    grid-template-columns: 4fr 3fr;
+    grid-template-areas: 
+    "filtro1 filtro2"
+    ;
+}
+
+.filtro1 {
+    grid-area: filtro1;
+
+    display: grid;
+    grid-template-columns: 1fr 3fr 3fr;
+    grid-template-areas: 
+    "ponto-passaporte  ponto-seletor ponto-id"
+    "ponto-funcao ponto-funcao ponto-funcao"
+    "ponto-data-adm ponto-data-adm ponto-data-adm"
+    ;
+}
+
+.ponto-passaporte{
+    grid-area: ponto-passaporte;
+}
+
+.ponto-seletor{
+    grid-area: ponto-seletor;
+
+    width: 150px;
+    height: 25px;
+    justify-self: center;
+}
+
+.ponto-id{
+    grid-area: ponto-id;
+}
+
+.ponto-funcao{
+    grid-area: ponto-funcao;
+}
+
+.ponto-data-adm{
+    grid-area: ponto-data-adm;
+}
+
+
+.filtro2 {
+    grid-area: filtro2;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+    "ponto-data-in  ponto-seletor-in"
+    "ponto-data-end ponto-seletor-end"
+    "btn-pqs btn-pqs"
+    ;
+}
+
+.ponto-data-in{
+    grid-area: ponto-data-in;
+    justify-self: end;
+}
+
+.ponto-seletor-in{
+    grid-area: ponto-seletor-in;
+
+    width: 120px;
+    height: 25px;
+    justify-self: center;
+}
+
+.ponto-data-end{
+    grid-area: ponto-data-end;
+
+    justify-self: end;
+}
+
+.ponto-seletor-end{
+    grid-area: ponto-seletor-end;
+
+    width: 120px;
+    height: 25px;
+    justify-self: center;
+}
+
+.btn-pqs{
+    grid-area: btn-pqs;
+    margin-top: 0;
+    justify-self: end;
+}

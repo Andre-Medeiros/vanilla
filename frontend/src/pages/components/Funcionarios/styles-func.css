@@ -1,0 +1,36 @@
+.func-section {
+    display: grid;
+    margin: auto;
+    grid-template-areas: 
+    "button"
+    "func-form"
+    ;
+    grid-auto-rows: 160px;
+    gap: 15px;
+}
+
+.func-form {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: 
+    "func-dados editar" 
+    "func-dados remover"
+    ;
+    align-items: start;
+}
+
+.func-dados {
+    grid-area: func-dados;
+    padding-bottom: 5px;
+}
+
+.editar {
+    grid-area: editar;
+    background-color: rgb(70, 190, 76);
+}
+
+.remover {
+    grid-area: remover;
+    background-color: rgb(255, 57, 100);
+}
+

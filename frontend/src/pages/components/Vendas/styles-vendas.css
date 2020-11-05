@@ -1,0 +1,101 @@
+.vendas-section {
+    display: grid;
+    grid-template-areas: 
+    "button"
+    "venda"
+    ;
+    grid-auto-rows: 160px;
+    gap: 15px;
+}
+
+.button {
+    margin: auto;
+}
+
+.venda {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+    grid-template-areas: 
+    "vendas-vendedor  vendas-vendedor vendas-vendedor"
+    "vendas-bebidas   vendas-bebidas  vendas-bebidas"
+    "vendas-total     btn-add  btn-save"
+    ;
+    align-items: start;
+}
+
+.vendas-vendedor {
+    grid-area: vendas-vendedor;
+}
+
+.vendas-bebidas {
+    grid-area: vendas-bebidas;
+
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.btn-add {
+    grid-area: btn-add;
+
+    width: 40px;
+    height: 40px;
+    margin: auto ;
+    margin-top: 0;
+    border-radius: 50px;
+    border: solid 2px #DE2EE1;
+    color: #DE2EE1;
+    font-size: 30px;
+    text-align: 60px;
+    background-color: white;
+
+    align-self: start;
+    
+}
+
+.vendas-total {
+    grid-area: vendas-total;
+
+    font-size: 16px;
+    align-self: center;
+    align-self: end;
+}
+
+.btn-save {
+    grid-area: btn-save;
+
+    width: 120px;
+    height: 40px;
+    margin: 0;
+    background-color: #e95ff5;
+    border: 0;
+    border-radius: 12px;
+    color: #fff;
+    font-weight: 700;
+    display: inline-block;
+    justify-content: center;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: auto;
+    transition: filter 0.2s;
+
+    justify-self: end;
+    align-self: end;
+}
+
+.btn-save:hover {
+    filter: brightness(90%);
+}
+
+
+.vendas-menu{
+    margin: 0 10px;
+}
+
+.vendas-quant {
+    width: 70px;
+    margin: 0 10px;
+    border: solid 1px #777;
+    padding: 0 12px;
+}

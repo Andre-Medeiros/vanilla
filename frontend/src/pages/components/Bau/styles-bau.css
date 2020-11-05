@@ -1,0 +1,51 @@
+.bau-section {
+    display: grid;
+    margin: auto;
+    grid-template-areas: 
+    "button"
+    "bau-campos"
+    ;
+    grid-auto-rows: 160px;
+    gap: 15px;
+}
+
+.button {
+    grid-area: button;
+}
+
+.bau-campos {
+    display: grid;
+    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-areas: 
+    "bau-img bau-infos btn-edit"
+    ;
+}
+
+.bau-img {
+    grid-area: bau-img;
+    justify-self: center;
+    text-align: center;
+}
+
+.bau-foto{
+    width: 75px;
+    height: 75px;
+    background-color: #777;
+}
+
+.bau-infos {
+    grid-area: bau-infos;
+    padding: 0;
+    padding-left: 10px;
+    align-self: start;
+    
+}
+
+.btn-edit{
+    grid-area: btn-edit;
+    margin: 0;
+    align-self: center;
+    justify-self: end;
+    width: 150px;
+}
+
