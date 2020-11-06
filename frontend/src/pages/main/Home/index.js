@@ -6,6 +6,7 @@ import Vendas from '../../components/Vendas';
 import Funcionarios from '../../components/Funcionarios';
 import Bau from '../../components/Bau';
 import Ponto from '../../components/Ponto';
+import BaterPonto from '../BaterPonto';
 
 import logoImg from '../../../assets/Logo.svg';
 
@@ -18,14 +19,15 @@ export default function Home() {
         <Router>
             <div className="home-container">
                 <header className="home-header">
-                    <div className="home-infos">
-                        <span>Logado como: </span>
-                        <span>Tilan Bucano | 28239</span>
+                    <div className="header-container">
+                        <div className="home-infos">
+                            <span>Logado como: </span>
+                            <span><strong>Tilan Bucano</strong> | <strong>28239</strong></span>
+                        </div>
+                        <BaterPonto className="bater-ponto" />
+                        <NavBar className="home-nav" />
+                        <a className="home-logo" href="#"><img src={logoImg} alt="Logo" /></a>
                     </div>
-
-                    <NavBar />
-
-                    <a className="home-logo" href="#"><img src={logoImg} alt="Logo" /></a>
                 </header>
 
                 <main className="home-content">
@@ -38,12 +40,6 @@ export default function Home() {
                         </Switch>
                     </div>
                 </main>
-
-                <footer className="home-footer">
-                    <h1>Bater Ponto!</h1>
-                    <button className="button" >Ponto Aberto</button>
-                    <p>Tempo Trabalhado: 02 horas 47 min</p>
-                </footer>
             </div>
         </Router>
     );

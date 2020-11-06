@@ -1,11 +1,11 @@
 .func-section {
     display: grid;
     margin: auto;
-    grid-template-areas: 
-    "button"
+    grid-template: 
+    "button" 70px
     "func-form"
     ;
-    grid-auto-rows: 160px;
+    grid-auto-rows: 200px;
     gap: 15px;
 }
 

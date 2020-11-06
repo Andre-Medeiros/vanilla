@@ -55,10 +55,11 @@
 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-    "ponto-data-in  ponto-seletor-in"
-    "ponto-data-end ponto-seletor-end"
-    "btn-pqs btn-pqs"
+    grid-template: 
+    "ponto-data-in  nice-dates" 50px
+    "ponto-data-end nice-dates" 50px
+    "btn-pqs        btn-pqs" 60px
+    /150px 200px
     ;
 }
 
@@ -67,30 +68,18 @@
     justify-self: end;
 }
 
-.ponto-seletor-in{
-    grid-area: ponto-seletor-in;
-
-    width: 120px;
-    height: 25px;
+.nice-dates{
+    grid-area: nice-dates;
     justify-self: center;
 }
 
 .ponto-data-end{
     grid-area: ponto-data-end;
-
     justify-self: end;
-}
-
-.ponto-seletor-end{
-    grid-area: ponto-seletor-end;
-
-    width: 120px;
-    height: 25px;
-    justify-self: center;
 }
 
 .btn-pqs{
     grid-area: btn-pqs;
-    margin-top: 0;
+    margin-right: 20px;
     justify-self: end;
 }

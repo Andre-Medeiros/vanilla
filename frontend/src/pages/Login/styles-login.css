@@ -5,7 +5,7 @@
     grid-template-areas: 
     "login-logo"
     "login"
-    "button"
+    "btn-login"
     ;
 
     
@@ -24,17 +24,27 @@
 .login-logo {
     grid-area: login-logo;
     justify-self: center;
+    margin-bottom: 30px;
 }
 
 .login {
     grid-area: login;
     padding: 0;
     margin: 0;
-    justify-items: center;
+    justify-self: end;
+
+    
 }
 
-.button {
-    grid-area: button;
+.btn-login {
+    grid-area: btn-login;
     justify-self: center;
     font-size: 24px;
+    margin-top: 30px !important;
+}
+
+input {
+    width: 530px;
+    height: 50px;
+    margin-bottom: 15px;
 }

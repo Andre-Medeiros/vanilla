@@ -27,7 +27,7 @@ export class Vendas extends Component{
                 <button className="button">Adicionar</button>
 
                 <form className="form-patern venda">
-                    <p className="vendas-vendedor">Vendedor: Tilan Bucano | 28239</p>
+                    <p className="vendas-vendedor">Vendedor: <strong>Tilan Bucano | 28239</strong></p>
                     <div className="vendas-bebidas">
 
                         <p>Bebidas:</p>
@@ -55,13 +55,13 @@ export class Vendas extends Component{
                     </div>
 
                     <button className="btn-add">+</button>
-                    <p className="vendas-total">Total da Venda: R$ 135.000,00</p>
-                    <button className="btn-save">Salvar</button>
+                    <p className="vendas-total">Total da Venda: <strong>R$ 135.000,00</strong></p>
+                    <button className="btn-lixo button">Salvar</button>
 
                 </form>
 
                 <form className="form-patern venda">
-                    <p className="vendas-vendedor">Vendedor: Tilan Bucano | 28239</p>
+                    <p className="vendas-vendedor">Vendedor: <strong>Tilan Bucano | 28239</strong></p>
                     <div className="vendas-bebidas">
 
                         <p>Bebidas:</p>
@@ -89,13 +89,13 @@ export class Vendas extends Component{
                     </div>
 
                     <button className="btn-add">+</button>
-                    <p className="vendas-total">Total da Venda: R$ 135.000,00</p>
-                    <button className="btn-save">Salvar</button>
+                    <p className="vendas-total">Total da Venda: <strong>R$ 135.000,00</strong></p>
+                    <button className="btn-lixo button">Salvar</button>
 
                 </form>
 
                 <form className="form-patern venda">
-                    <p className="vendas-vendedor">Vendedor: Tilan Bucano | 28239</p>
+                    <p className="vendas-vendedor">Vendedor: <strong>Tilan Bucano | 28239</strong></p>
                     <div className="vendas-bebidas">
 
                         <p>Bebidas:</p>
@@ -123,13 +123,13 @@ export class Vendas extends Component{
                     </div>
 
                     <button className="btn-add">+</button>
-                    <p className="vendas-total">Total da Venda: R$ 135.000,00</p>
-                    <button className="btn-save">Salvar</button>
+                    <p className="vendas-total">Total da Venda: <strong>R$ 135.000,00</strong></p>
+                    <button className="btn-lixo button">Salvar</button>
 
                 </form>
 
                 <form className="form-patern venda">
-                    <p className="vendas-vendedor">Vendedor: Tilan Bucano | 28239</p>
+                    <p className="vendas-vendedor">Vendedor: <strong>Tilan Bucano | 28239</strong></p>
                     <div className="vendas-bebidas">
 
                         <p>Bebidas:</p>
@@ -157,8 +157,8 @@ export class Vendas extends Component{
                     </div>
 
                     <button className="btn-add">+</button>
-                    <p className="vendas-total">Total da Venda: R$ 135.000,00</p>
-                    <button className="btn-save">Salvar</button>
+                    <p className="vendas-total">Total da Venda: <strong>R$ 135.000,00</strong></p>
+                    <button className="btn-lixo button">Salvar</button>
 
                 </form>
             </section>

@@ -1,5 +1,6 @@
 import React from 'react';
 import 'react-calendar/dist/Calendar.css';
+import Calendario from './Calendario';
 
 import './styles-ponto.css';
 
@@ -20,9 +21,9 @@ export default function Ponto() {
 
                 <div className="filtro2">
                     <p className="ponto-data-in">Data de inicio: </p>
-                    <input className="ponto-seletor-in"></input>
                     <p className="ponto-data-end">Data de fim: </p>
-                    <input className="ponto-seletor-end"></input>
+                    <Calendario className="ponto-seletor" />
+                    
                     <button className="button btn-pqs">Pesquisar</button>
                 </div>
             </div>

@@ -15,7 +15,7 @@ export default function Login(){
                     <input placeholder="Passaporte" />
                     <input placeholder="Senha" />
                 </form>
-                <Link className="button" to="/home" type="submit">Entrar</Link>
+                <Link className="button btn-login" to="/home" type="submit">Entrar</Link>
             </div>
         </section>
         

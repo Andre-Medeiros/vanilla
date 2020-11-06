@@ -1,26 +1,30 @@
 .vendas-section {
     display: grid;
-    grid-template-areas: 
-    "button"
+    grid-template: 
+    "button" 100px
     "venda"
     ;
-    grid-auto-rows: 160px;
+    grid-auto-rows: 250px;
     gap: 15px;
 }
 
 .button {
-    margin: auto;
+    margin: 0 auto;
+    width: 150px;
 }
 
 .venda {
     display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-    grid-template-areas: 
-    "vendas-vendedor  vendas-vendedor vendas-vendedor"
-    "vendas-bebidas   vendas-bebidas  vendas-bebidas"
-    "vendas-total     btn-add  btn-save"
+    grid-template-columns: 2fr 2fr;
+    grid-template: 
+    "vendas-vendedor  vendas-vendedor" 30px
+    "vendas-bebidas   vendas-bebidas"  60px
+    "btn-add          btn-add"  50px
+    "vendas-total     btn-lixo"   50px  
     ;
     align-items: start;
+
+    
 }
 
 .vendas-vendedor {
@@ -38,64 +42,48 @@
 .btn-add {
     grid-area: btn-add;
 
-    width: 40px;
-    height: 40px;
-    margin: auto ;
-    margin-top: 0;
+    width: 50px;
+    height: 50px;
+    margin-top: 0px;
+    margin: auto;
     border-radius: 50px;
     border: solid 2px #DE2EE1;
     color: #DE2EE1;
-    font-size: 30px;
-    text-align: 60px;
+    font-size: 50px;
+    text-align: center;
+    line-height: 0% ;
     background-color: white;
 
-    align-self: start;
+    align-items: center;
+    justify-items: center;
     
 }
 
 .vendas-total {
     grid-area: vendas-total;
 
-    font-size: 16px;
-    align-self: center;
+    font-size: 24px;
     align-self: end;
 }
 
-.btn-save {
-    grid-area: btn-save;
+.btn-lixo{
+    grid-area: btn-lixo;
 
-    width: 120px;
-    height: 40px;
-    margin: 0;
-    background-color: #e95ff5;
-    border: 0;
-    border-radius: 12px;
-    color: #fff;
-    font-weight: 700;
-    display: inline-block;
-    justify-content: center;
-    text-align: center;
-    text-decoration: none;
-    font-size: 18px;
-    line-height: auto;
-    transition: filter 0.2s;
-
+    width: 170px;
+    margin-right: 15px !important;
     justify-self: end;
-    align-self: end;
 }
-
-.btn-save:hover {
-    filter: brightness(90%);
-}
-
 
 .vendas-menu{
     margin: 0 10px;
+    width: 210px;
 }
 
 .vendas-quant {
     width: 70px;
+    height: 30px;
     margin: 0 10px;
     border: solid 1px #777;
     padding: 0 12px;
+    
 }

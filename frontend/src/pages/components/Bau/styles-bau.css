@@ -1,7 +1,7 @@
 .bau-section {
     display: grid;
     margin: auto;
-    grid-template-areas: 
+    grid-template: 
     "button"
     "bau-campos"
     ;
@@ -10,7 +10,6 @@
 }
 
 .button {
-    grid-area: button;
 }
 
 .bau-campos {
