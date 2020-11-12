@@ -2,7 +2,20 @@ const connection = require('../database/connection');
 
 module.exports = {
     async list(request, response) {
-        const vendas = await connection('vendas').select('*');
+        const { page = 1 } = request.query;
+        const [count] = await connection('vendas').count();
+
+        const vendas = await connection('vendas')
+        .join('users', 'users.id', '=', 'vendas.user_id')
+        .limit(30)
+        .offset((page -1)* 30)
+        .select([
+            'vendas.*', 
+            'users.nome', 
+            'users.passaporte'
+        ]);
+
+        response.header('X-Total-Count', count['count(*)']);
 
         return response.json(vendas);
     },

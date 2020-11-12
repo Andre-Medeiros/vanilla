@@ -2,9 +2,11 @@ const express = require('express');
 const UserController = require('./controllers/UserController');
 const VendasController = require('./controllers/VendasController');
 const EstoqueController = require('./controllers/EstoqueController');
+const SessionController = require('./controllers/SessionController');
 
 const routes = express.Router();
 
+routes.post('/sessions', SessionController.create);
 
 /** todos os usuarios */
 routes.get('/users', UserController.list);
