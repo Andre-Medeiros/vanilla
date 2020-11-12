@@ -2,22 +2,31 @@
     display: grid;
     margin: auto;
     grid-template: 
-    "button"
+    "btn-bau" 100px
     "bau-campos"
     ;
-    grid-auto-rows: 160px;
+    grid-auto-rows: 190px;
     gap: 15px;
 }
 
-.button {
+.btn-bau {
+    max-width: 300px;
+    line-height: 20px;
 }
 
 .bau-campos {
     display: grid;
-    grid-template-columns: 1fr 5fr 2fr;
+    grid-template-columns: 100px 640px 200px;
     grid-template-areas: 
     "bau-img bau-infos btn-edit"
     ;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 30px;
+
+    background-color: var(--light-color);
+    border: none;
+    border-radius: 5px;
 }
 
 .bau-img {
@@ -27,24 +36,24 @@
 }
 
 .bau-foto{
-    width: 75px;
-    height: 75px;
+    width: 100px;
+    height: 100px;
     background-color: #777;
+    text-align: center;
+    line-height: 100px;
+    
 }
 
 .bau-infos {
     grid-area: bau-infos;
-    padding: 0;
-    padding-left: 10px;
     align-self: start;
-    
+    padding-left: 30px;
 }
 
 .btn-edit{
     grid-area: btn-edit;
-    margin: 0;
     align-self: center;
     justify-self: end;
-    width: 150px;
+    line-height: 20px;
 }
 

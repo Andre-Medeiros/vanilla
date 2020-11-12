@@ -2,35 +2,44 @@
     display: grid;
     margin: auto;
     grid-template: 
-    "button" 70px
-    "func-form"
+    "btn-funcionarios" 100px
+    "form-funcionario"
     ;
     grid-auto-rows: 200px;
     gap: 15px;
 }
 
-.func-form {
+.btn-funcionarios{
+    max-width: 300px;
+    line-height: 20px;
+}
+
+.form-funcionario {
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 670px 270px;
     grid-template-areas: 
-    "func-dados editar" 
-    "func-dados remover"
+    "dados-funcionario btn-edit" 
+    "dados-funcionario btn-remove"
     ;
     align-items: start;
+
+    background-color: var(--light-color);
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 30px;
 }
 
-.func-dados {
-    grid-area: func-dados;
-    padding-bottom: 5px;
+.dados-funcionario {
+    grid-area: dados-funcionario;
 }
 
-.editar {
-    grid-area: editar;
-    background-color: rgb(70, 190, 76);
+.btn-edit {
+    grid-area: btn-edit;
 }
 
-.remover {
-    grid-area: remover;
-    background-color: rgb(255, 57, 100);
+.btn-remove {
+    grid-area: btn-remove;
+    line-height: 20px;
+    margin-top: 0;
 }
 

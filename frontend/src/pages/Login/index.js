@@ -7,17 +7,23 @@ import logoImg from '../../assets/Logo.svg';
 
 export default function Login(){
     return(
-        <section className='login-container'>
-            <div className="login-form">
+            <form action="">
                 <img className="login-logo" src={logoImg} alt="Logo" />
 
-                <form className="login">
-                    <input placeholder="Passaporte" />
-                    <input placeholder="Senha" />
-                </form>
-                <Link className="button btn-login" to="/home" type="submit">Entrar</Link>
-            </div>
-        </section>
-        
+                <div className="input">
+                    <input required type="text" />
+                    <label>Passaporte</label>
+                    <span className="error"></span>
+                </div>
+
+                <div className="input">
+                    <input required type="password" />
+                    <label>Senha</label>
+                    <span className="error"></span>
+                </div>
+
+                <Link className="button" to="/home" type="submit">Entrar</Link>
+
+            </form>        
     );
 }

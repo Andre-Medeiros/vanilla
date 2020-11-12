@@ -24,7 +24,7 @@ export default function Home() {
                             <span>Logado como: </span>
                             <span><strong>Tilan Bucano</strong> | <strong>28239</strong></span>
                         </div>
-                        <BaterPonto className="bater-ponto" />
+                        
                         <NavBar className="home-nav" />
                         <a className="home-logo" href="#"><img src={logoImg} alt="Logo" /></a>
                     </div>
@@ -40,6 +40,10 @@ export default function Home() {
                         </Switch>
                     </div>
                 </main>
+
+                <footer className="home-footer">
+                    <BaterPonto className="bater-ponto" />
+                </footer>
             </div>
         </Router>
     );

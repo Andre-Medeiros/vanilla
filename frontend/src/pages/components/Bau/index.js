@@ -7,9 +7,9 @@ export class Bau extends Component{
         return(
             <div className="bau-section">
 
-                <button className="button">Adicionar</button>
+                <button className="button btn-bau">Adicionar</button>
 
-                <div className="form-patern bau-campos">
+                <div className="bau-campos">
                     <div className="bau-img">
                         <p className="bau-foto">imagem</p>
                         <p>roupas</p>
@@ -23,7 +23,7 @@ export class Bau extends Component{
                     <button className="button btn-edit">Editar</button>
                 </div>
 
-                <div className="form-patern bau-campos">
+                <div className="bau-campos">
                     <div className="bau-img">
                         <p className="bau-foto">imagem</p>
                         <p>roupas</p>
@@ -37,8 +37,7 @@ export class Bau extends Component{
                     <button className="button btn-edit">Editar</button>
                 </div>
 
-
-                <div className="form-patern bau-campos">
+                <div className="bau-campos">
                     <div className="bau-img">
                         <p className="bau-foto">imagem</p>
                         <p>roupas</p>
@@ -52,8 +51,35 @@ export class Bau extends Component{
                     <button className="button btn-edit">Editar</button>
                 </div>
 
+                <div className="bau-campos">
+                    <div className="bau-img">
+                        <p className="bau-foto">imagem</p>
+                        <p>roupas</p>
+                    </div>
+                    <div className="bau-infos">
+                        <p>Quantidade: xxx</p>
+                        <p>Data: xxx</p>
+                        <p>Passaporte: xxx</p>
+                        <p>Ultima modificação por: xxx</p>
+                    </div>
+                    <button className="button btn-edit">Editar</button>
+                </div>
 
-                <div className="form-patern bau-campos">
+                <div className="bau-campos">
+                    <div className="bau-img">
+                        <p className="bau-foto">imagem</p>
+                        <p>roupas</p>
+                    </div>
+                    <div className="bau-infos">
+                        <p>Quantidade: xxx</p>
+                        <p>Data: xxx</p>
+                        <p>Passaporte: xxx</p>
+                        <p>Ultima modificação por: xxx</p>
+                    </div>
+                    <button className="button btn-edit">Editar</button>
+                </div>
+
+                <div className="bau-campos">
                     <div className="bau-img">
                         <p className="bau-foto">imagem</p>
                         <p>roupas</p>

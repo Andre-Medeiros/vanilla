@@ -4,6 +4,7 @@
     "home-header   home-header   home-header"
     "...........   home-content  ..........."
     "home-footer   home-footer   home-footer "
+    / 300px 1fr 300px
     ;
     gap: 10px
 }
@@ -11,21 +12,18 @@
 
 .home-header {
     grid-area: home-header;
+    justify-self: center;
 
     width: 100%;
-    background-color: #FFE7FA;
-    border: 2px solid #e95ff5;
-    justify-self: center;
-    padding: 0 30px;
-
-    
+    background-color: var(--light-color);
+    border: none;
+    border-bottom: 1px solid var(--primary-color);
 }
 
 .header-container{
     display: grid;
     grid-template: 
-    "home-infos  bater-ponto home-logo" 160px
-    "home-infos  home-nav    home-logo" 60px
+    "home-infos  home-nav  home-logo" 100px
     / 280px 1fr 280px;
     align-items: center;
 
@@ -37,20 +35,16 @@
     grid-area: home-infos;
     align-self: start;
     justify-self: start;
-    padding: 30px 0px;
-    font-size: 16px;
 }
 
 .bater-ponto{
     grid-area: bater-ponto;
     align-self: center;
     justify-self: center;
-    margin-top: 10px;
 }
 
 .home-logo {
     grid-area: home-logo;
-    width: 200px !important;
 }
 
 .home-nav{
@@ -60,11 +54,12 @@
  /*CORPO DA PAGINA */
 .home-content{
     grid-area: home-content;
-    background-color: white;
-    width: 100%;
-    max-width: 1180px;
-    height: 100%;
-    padding: 20px;
-    border: solid 2px #E95FF5;
-    border-radius: 8px;
+    background-color: var(--light-color);
+    padding: 32px 32px;
+}
+
+.home-footer {
+    grid-area: home-footer;
+
+    background-color: var(--light-color);
 }

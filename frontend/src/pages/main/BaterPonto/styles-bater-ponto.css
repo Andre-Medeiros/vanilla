@@ -6,26 +6,16 @@
     "p" 35px
     ;
 
-
-    width: 400px;
-    background-color: #FFE7FA;
-    border: #E95FF5 solid 2px;
-    border-radius: 8px;
     align-self: center;
     justify-self: center;
 }
 
 .bater-ponto h1 {
-    text-align: center;
-    color: #E95FF5;
-    margin-top: 5px;
 }
 
 .bater-ponto p {
-    text-align: center;
 }
 
 .btn-ponto{
     width: 150px;
-    margin-bottom: 60px !important;
 }

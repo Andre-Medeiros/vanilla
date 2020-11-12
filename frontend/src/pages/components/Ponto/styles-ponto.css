@@ -31,9 +31,6 @@
 
 .ponto-seletor{
     grid-area: ponto-seletor;
-
-    width: 150px;
-    height: 25px;
     justify-self: center;
 }
 
