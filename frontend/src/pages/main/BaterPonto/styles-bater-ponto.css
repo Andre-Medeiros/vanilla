@@ -6,16 +6,34 @@
     "p" 35px
     ;
 
-    align-self: center;
-    justify-self: center;
+    align-items: center;
+    justify-items: center;
+
+    max-width: 400px;
 }
 
 .bater-ponto h1 {
+    text-align: center;
 }
 
 .bater-ponto p {
+    text-align: center;
 }
 
 .btn-ponto{
-    width: 150px;
+    max-width: 150px;
+    margin: 0 auto;
+    line-height: 20px;
+}
+
+.footer {
+    display: grid;
+    grid-template: 
+    "bater-ponto copyridth  ..."
+    ;
+}
+
+.copyridth {
+    align-self: end;
+    margin-bottom: 15px;
 }

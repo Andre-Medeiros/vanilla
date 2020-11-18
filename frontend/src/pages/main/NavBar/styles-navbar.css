@@ -7,7 +7,7 @@
     margin: 0 auto;
     width: 680px;
     height: 50px;
-    background: #E95FF5;
+    background: var(--primary-color);
     border-radius: 50px 50px 0 0;
     font-size: 0;
     box-shadow:  0 2px 3px 0 rgba(233, 95, 245, 0.1);
@@ -16,7 +16,7 @@
 nav a {
     font-size: 15px;
     text-transform: uppercase;
-    color: #FFE7FA;
+    color: var(--text-color);
     text-decoration: none;
     line-height: 50px;
     position: relative;
@@ -33,7 +33,7 @@ nav .animation{
     height: 5%;
     bottom: 0;
     z-index: 0;
-    background: #FFE7FA;
+    background: var(--text-color);
     border-radius: 8px;
     transition: all 0.5s ease 0s;
 }

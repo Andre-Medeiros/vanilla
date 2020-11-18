@@ -1,3 +1,14 @@
+.container{
+    display: grid;
+    grid-template: 
+    "ponto-section"
+    "planilha"
+    ;
+
+    gap: 30px;
+}
+
+
 .ponto-section {
     display: grid;
     grid-template-columns: 1fr;
@@ -19,31 +30,32 @@
     display: grid;
     grid-template-columns: 1fr 3fr 3fr;
     grid-template-areas: 
-    "ponto-passaporte  ponto-seletor ponto-id"
-    "ponto-funcao ponto-funcao ponto-funcao"
-    "ponto-data-adm ponto-data-adm ponto-data-adm"
+    "ponto-passaporte  ponto-seletor"
+    "ponto-funcao ponto-funcao"
+    "ponto-data-adm ponto-data-adm"
     ;
 }
 
 .ponto-passaporte{
     grid-area: ponto-passaporte;
+    align-self: center;
 }
 
 .ponto-seletor{
     grid-area: ponto-seletor;
-    justify-self: center;
-}
-
-.ponto-id{
-    grid-area: ponto-id;
+    justify-self: start;
+    padding: 0 10px;
+    max-width: 200px;
 }
 
 .ponto-funcao{
     grid-area: ponto-funcao;
+    align-self: center;
 }
 
 .ponto-data-adm{
     grid-area: ponto-data-adm;
+    align-self: center;
 }
 
 
@@ -56,27 +68,87 @@
     "ponto-data-in  nice-dates" 50px
     "ponto-data-end nice-dates" 50px
     "btn-pqs        btn-pqs" 60px
-    /150px 200px
+    /150px 200px 1px
     ;
 }
 
 .ponto-data-in{
     grid-area: ponto-data-in;
     justify-self: end;
+    align-self: center;
+    margin-right: 5px;
 }
 
-.nice-dates{
+.nice-dates .date-range .input{
     grid-area: nice-dates;
-    justify-self: center;
+    align-self: center;
+    padding: 0;
+    height: 40px;
+    margin-top: 7px;
 }
 
 .ponto-data-end{
     grid-area: ponto-data-end;
     justify-self: end;
+    align-self: center;
+    margin-right: 5px;
 }
 
 .btn-pqs{
     grid-area: btn-pqs;
-    margin-right: 20px;
     justify-self: end;
+    line-height: 20px;
+    max-width: 200px;
+}
+
+
+.planilha{
+    display: grid;
+    grid-template: 
+    "indice"
+    "resultado"
+    ;
+    background-color: var(--light-color);
+    width: 100%;
+    padding: 30px;
+}
+
+.indice{
+    display: grid;
+    grid-template: 
+    "sp1 nome sp2 passaporte sp3 data sp4 entrada sp5 saida sp6 HT sp7 receber sp8"
+    /35px 150px 35px 120px 35px 100px 35px 100px 35px 100px 35px 140px 35px 100px 35px
+    ;
+    align-items: center;
+    justify-items: center;
+    font-size: 24px;
+    color: var(--primary-color);
+    margin: 0 auto;
+}
+
+.resultado{
+    display: grid;
+    grid-template: 
+    "sp1 nome sp2 passaporte sp3 data sp4 entrada sp5 saida sp6 HT sp7 receber sp8"
+    /35px 150px 35px 120px 35px 100px 35px 100px 35px 100px 35px 140px 35px 100px 35px
+    ;
+    align-items: center;
+    justify-items: center;
+    font-size: 20px;
+    margin: 0 auto;
+}
+
+.separador-vertical{
+    margin: 0 15px;
+    width: 5px;
+    height: 50px;
+    background-color: var(--light-color);
+}
+
+.separador-horizontal{
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    height: 5px;
+    background-color: var(--light-color);
 }
